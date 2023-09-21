@@ -18,7 +18,7 @@ export default async function Topicslist() {
     const {topics} = await getTopics();
   return (
        <>
-       {topics.map((value)=>(
+       {topics && topics.map((value)=>(
        <div key={value._id} className="topic-list">
                <div className="topic-details">
                 <h2 className="topic-title">{value.title}</h2>
