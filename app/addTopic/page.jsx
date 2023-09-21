@@ -13,7 +13,7 @@ export default  function Page() {
     console.log(description)
     if(title.length>0 && description.length>0){
       try{
-        const res= await fetch('http://localhost:3000/api/topics',{
+        const res= await fetch('http://127.0.0.1:3000/api/topics',{
           method:'POST',
           headers:{
             'Content-type':'application/json'
